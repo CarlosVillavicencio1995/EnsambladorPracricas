@@ -97,10 +97,8 @@ archivo_2:
 
 ciclo_resta: 
     mov al, [texto + esi] ; al ser cadena se empieza con 0
-    sub al, [texto2 + esi] ; 7+6+acarreo
-    aaa                ; suma Al 6 y AH suma el acarreo se aplica despues de una suma 
-                       ; con acarreo y suma el contenido del abandera de el carry 
-                       ; al primer operando y despues al segundo
+    sub al, [texto2 + esi] ; 
+    aaa                ; 
     pushf              ; guarda estado de todas las banderas
 
     or al, 30h         ; es similar a sub al,'0'
